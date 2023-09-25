@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Login</title>
+    <style>
+        table, th, td {
+            border: 5px solid white;
+            border-collapse: collapse;
+        }
+        th, td {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <form action="table.html" method="POST">
+        <fieldset>
+        <legend>Login</legend>
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="username" placeholder="Isi namamu jeng..." required/>
+        </p>
+        <p>
+            <label>NIM:</label>
+            <input type="NIM" name="NIM" placeholder = "Isi NIM mu Jeng..." required/>
+        </p>
+        <p>
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+        </p>
+        <p>
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" cols="21" rows="5" required></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Submit" />
+        </p>
+        </fieldset>
+    </form>
+
+    <table>
+        <thread>
+
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Tanggal</th>
+                <th>Alamat</th>
+    
+            </tr>
+        </thread>
+
+        <thread>
+            <tr>
+                <th>1</th>
+                <th>edgar</th>
+                <th>202110370311493</th>
+                <th>blabla</th>
+                <th>satulagi</th>
+            </tr>
+        </thread>
+    </table>
+</body>
+</html>
