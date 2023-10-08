@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      label {
+        display: inline-block;
+        width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="all-padding custom-element-title">PENJUMLAHAN BILANGAN</h1>
+    <p>
+      <label class="style-text-label" for="bil-pertama">First Number</label>
+      <input
+        class="style-placeholder"
+        type="text"
+        id="bil-pertama"
+        placeholder="Enter first number"
+      />
+    </p>
+    <p>
+      <label for="bil-kedua">Second Number</label>
+      <input
+        class="style-placeholder"
+        type="text"
+        id="bil-kedua"
+        placeholder="Enter second number"
+      />
+    </p>
+    <p>
+      <button type="button" onclick="sum()">Sum</button>
+      <button type="button" onclick="repeat()">Repeat</button>
+    </p>
+
+    <script>
+      function sum() {
+        var first_number = parseFloat(
+          document.getElementById("bil-pertama").value
+        );
+        var second_number = parseFloat(
+          document.getElementById("bil-kedua").value
+        );
+
+        var result = first_number + second_number;
+
+        if (!isNaN(result)) {
+          alert("Sum Result : " + result);
+        } else {
+          alert("Invalid input. Please enter valid numbers");
+        }
+      }
+
+      function repeat() {
+        document.getElementById("bil-pertama").value = "";
+        document.getElementById("bil-kedua").value = "";
+      }
+    </script>
+  </body>
+</html>
